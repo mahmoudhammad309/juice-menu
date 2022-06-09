@@ -3,6 +3,7 @@ import Card from "./card/card";
 
 const JuiceCards = () => {
   const [juice, setJuice] = useState([]);
+  //? fetch the data from the API and store it in the juice state
   useEffect(() => {
     const API_URL = "https://629e71fe3dda090f3c19d701.mockapi.io/v1/meals";
     fetch(API_URL)
@@ -13,6 +14,7 @@ const JuiceCards = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
+      //? looping over juices data and rendering juices cards
     <div className="container">
       {juice.map((element) => {
         return (

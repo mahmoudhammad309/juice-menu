@@ -43,6 +43,10 @@ form .wrapper {
   align-items: center;
   height: 100%;
 }
+.App p {
+  color: red;
+  margin-top: -2rem;
+}
  .showForm {
   display: block;
 }
